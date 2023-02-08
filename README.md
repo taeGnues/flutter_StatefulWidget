@@ -1,16 +1,15 @@
-# hello_world
+# 기본적인 flutter의 column과 row를 공부합니다.
 
-A new Flutter project.
+Safe Area, MediaQuery.of(context).size.width (or height)
 
-## Getting Started
+## 이번 레슨에 사용되는 프로퍼티 입니다.
 
-This project is a starting point for a Flutter application.
+MainAxisAlignment => start, end, center, spaceEvenly, Around, Between
 
-A few resources to get you started if this is your first Flutter project:
+CrossAxisAlignment => stretch
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+MainAxisSize => max, min
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Expanded => 남은 공간 전부 차지
+
+Flexible => 남은 공간 전부 버리기
