@@ -1,15 +1,22 @@
-# 기본적인 flutter의 column과 row를 공부합니다.
+# 기본적인 flutter의 StatefulWdiget을 공부합니다.
 
-Safe Area, MediaQuery.of(context).size.width (or height)
+## StatefulWidget의 라이프사이클 - 위젯 생성 및 삭제
 
-## 이번 레슨에 사용되는 프로퍼티 입니다.
+<StatefulWidget>
+Constructor -> createState
 
-MainAxisAlignment => start, end, center, spaceEvenly, Around, Between
+<State>
+initState -> didChangeDependencies -> dirty상태 -> build -> clean상태 -> deactivate -> dispose
 
-CrossAxisAlignment => stretch
+## StatefulWidget의 라이프사이클 - 위젯 생성 된 후 parameter 바뀔 시
 
-MainAxisSize => max, min
+<StatefulWidget>
+기존 위젯 삭제 후 Constructor -> 기존 위젯의 State 찾기
 
-Expanded => 남은 공간 전부 차지
+<State>
+didUpdateWidget -> dirty -> build -> clean
 
-Flexible => 남은 공간 전부 버리기
+## StatefulWidget의 라이프 사이클 - setState 실행 시
+
+<State>
+setState 실행 -> dirty -> build -> clean
