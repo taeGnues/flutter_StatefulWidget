@@ -1,4 +1,4 @@
-# 기본적인 flutter의 StatefulWdiget을 공부합니다.
+# 기본적인 flutter의 StatefulWidget을 공부합니다.
 
 ## StatefulWidget의 라이프사이클 - 위젯 생성 및 삭제
 
